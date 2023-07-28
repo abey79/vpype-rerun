@@ -1,3 +1,5 @@
+import random
+
 import vpype as vp
 import vpype_cli
 import rerun as rr
@@ -8,7 +10,7 @@ import rerun as rr
 def rerun(document: vp.Document) -> vp.Document:
     """Rerun test"""
 
-    rr.init("my data", spawn=True)
+    rr.init(f"vpype_{random.random()}", spawn=True)
 
     for lid, layer in document.layers.items():
         pen_width = layer.property("vp_pen_width") or document.property("vp_pen_width") or 1.0
