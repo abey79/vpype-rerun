@@ -1,11 +1,19 @@
 # vpype-rerun
 
-This plug-in integrates the [Rerun viewer](https://github.com/rerun-io/rerun) in [`vpype`](https://github.com/abey79/vpype).
+This plug-in integrates the [Rerun viewer](https://github.com/rerun-io/rerun) in [*vpype*](https://github.com/abey79/vpype).
+
+## Example
+
+```
+vpype random -n 500 -a 20cm 20cm rerun
+```
+
+<img width="1106" alt="image" src="https://github.com/abey79/vpype-rerun/assets/49431240/4bcadf27-3058-4c16-aaab-5ba5fe3e9252">
 
 
 ## Why?
 
-Mostly for testing purpose on the Rerun side. This plug-in makes it easy to log large quantities of [2D line strips](https://www.rerun.io/docs/reference/data_types/linestrip2d) to the Rerun viewer, which is useful for stress-testing, etc.
+This plug-in makes it easy to log large quantities of [2D line strips](https://www.rerun.io/docs/reference/data_types/linestrip2d) to the Rerun viewer, which is useful for stress-testing, etc.
 
 
 ## Installation
