@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vpype-rerun"
-version = "0.1.0a0"
+version = "0.1.0"
 description = "Rerun viewer integration for vpype"
 authors = ["Antoine Beyeler <abeyeler@ab-ware.com>"]
 license = "MIT"
