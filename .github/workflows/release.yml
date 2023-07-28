@@ -12,11 +12,6 @@ jobs:
     name: Create Release and Upload to PyPI
     runs-on: ubuntu-latest
     steps:
-    - name: Get tag
-      id: tag
-      run: |
-        echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
-
     - name: Checkout code
       uses: actions/checkout@v2
 
@@ -37,7 +32,6 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: ${{ steps.tag.outputs.tag }}
         prerelease: false
         draft: true
         files: |
