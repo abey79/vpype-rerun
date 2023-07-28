@@ -1,5 +1,5 @@
 # Change log
 
-## 0.1.0 (UNRELEASED)
+## 0.1.0 (2023-07-23)
 
 * Initial release
